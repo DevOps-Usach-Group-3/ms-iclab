@@ -24,7 +24,7 @@ public class RestData {
 
 	@GetMapping(path = "/test", produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody Pais getData(@RequestParam(name = "msg") String message){
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
+		LOGGER.log(Level.INFO, "Proceso exitoso de prueba ");
 		Pais response = new Pais();
 		response.setMensaje("Mensaje Recibido: " + message);
 		return response;
